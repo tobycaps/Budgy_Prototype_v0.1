@@ -4,14 +4,15 @@ plugins {
 
 android {
     namespace 'com.example.budgy_prototype_v01'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.budgy_prototype_v01"
-        minSdk 19
+        minSdk 21
         targetSdk 32
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -36,4 +37,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.github.fornewid:neumorphism:0.3.2'
+    implementation("androidx.multidex:multidex:2.0.1")
 }
