@@ -11,4 +11,6 @@
     <color name="background_color">#ecf0f3</color>
     <color name="highlight">#ffffff</color>
     <color name="shadow_color">#d9dbde</color>
+    <color name="budgy_def">#686D86</color>
+    <color name="background">#E6E9EB</color>
 </resources>

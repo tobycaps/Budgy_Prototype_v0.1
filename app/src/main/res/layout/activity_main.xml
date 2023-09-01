@@ -1,91 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color">
+    android:background="@color/background">
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:textAlignment="center">
 
+
+        <TextView
+            android:id="@+id/budgy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="196dp"
+            android:elegantTextHeight="false"
+            android:shadowColor="#000"
+            android:shadowDx="-2"
+            android:shadowDy="-2"
+            android:shadowRadius="5"
+            android:text="Budgy"
+            android:textAlignment="center"
+            android:textColor="@color/budgy_def"
+            android:textSize="96sp"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="Welcome"
-            android:textStyle="bold"
-            android:layout_height="wrap_content"
-            android:textSize="40sp"
-            android:textColor="@color/text_color"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center" />
-
-        <TextView
-            android:layout_width="163dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="10dp"
-            android:text="Let's get started"
+            android:text="Your Budgeting Companion"
+            android:textAlignment="center"
             android:textColor="@color/text_color"
             android:textSize="20sp" />
 
-        <soup.neumorphism.NeumorphCardView
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            style="@style/Widget.Neumorph.CardView"
-            app:neumorph_shapeType="pressed">
-
-            <EditText
-                android:gravity="center"
-                android:textColor="@color/text_color"
-                android:hint=" Email"
-                android:inputType="textEmailAddress"
-                android:layout_width="match_parent"
-                android:paddingEnd="10dp"
-                android:layout_height="match_parent"
-                android:padding="14dp"
-                android:textColorHint="@color/text_color"
-                android:autofillHints="" />
-        </soup.neumorphism.NeumorphCardView>
-
-        <soup.neumorphism.NeumorphCardView
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            style="@style/Widget.Neumorph.CardView"
-            app:neumorph_shapeType="pressed">
-
-            <EditText
-                android:textColor="@color/text_color"
-                android:inputType="textPassword"
-                android:gravity="center"
-                android:id="@+id/password"
-                android:padding="14dp"
-                android:layout_width="match_parent"
-                android:paddingEnd="10dp"
-                android:layout_height="match_parent"
-                android:hint="Password"
-                android:autofillHints=""
-                android:textColorHint="@color/text_color"
-                tools:ignore="RtlSymmetry" />
-        </soup.neumorphism.NeumorphCardView>
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/login"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#E2EBF5"
+            android:text="Log In"
+            android:textColor="@color/budgy_def"
+            android:textSize="16dp" />
 
         <soup.neumorphism.NeumorphButton
-            android:layout_marginTop="10dp"
+            android:id="@+id/signup"
+            style="@style/Widget.Neumorph.Button"
             android:layout_width="200dp"
-            android:layout_gravity="center"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/budgy_def"
+            android:backgroundTintMode="add"
+            android:text="Sign Up"
+            android:textColor="@color/white"
             android:textSize="16dp"
-            android:text="Sign In"
-            android:textColor="@color/text_color"
-            style="@style/Widget.Neumorph.Button">
-        </soup.neumorphism.NeumorphButton>
+            app:neumorph_backgroundColor="@color/budgy_def" />
     </LinearLayout>
 </RelativeLayout>
