@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "313652323035",
+    "project_id": "budgy-v1",
+    "storage_bucket": "budgy-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313652323035:android:594b11cb2bcfd49b3b62fe",
+        "android_client_info": {
+          "package_name": "com.example.budgy_prototype_v01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313652323035-cehrh7clc9m5217rolub604m81bfo0gd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYg-nv_WZZZX3xqa8HaGoaNTBLFI2PStk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313652323035-cehrh7clc9m5217rolub604m81bfo0gd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
