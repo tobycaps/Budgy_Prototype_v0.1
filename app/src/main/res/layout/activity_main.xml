@@ -7,18 +7,24 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:textAlignment="center">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
+        <ImageView
+            android:id="@+id/group_248"
+            android:layout_width="match_parent"
+            android:layout_height="485dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/element_background" />
+    </RelativeLayout>
 
         <TextView
             android:id="@+id/budgy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="196dp"
             android:elegantTextHeight="false"
             android:shadowColor="#000"
@@ -29,13 +35,14 @@
             android:textAlignment="center"
             android:textColor="@color/budgy_def"
             android:textSize="96sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="10dp"
+            android:layout_below="@id/budgy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
             android:text="Your Budgeting Companion"
             android:textAlignment="center"
             android:textColor="@color/text_color"
@@ -46,11 +53,13 @@
             style="@style/Widget.Neumorph.Button"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_below="@id/budgy"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="100dp"
             android:backgroundTint="#E2EBF5"
             android:text="Log In"
             android:textColor="@color/budgy_def"
+            app:neumorph_backgroundColor="@color/background"
             android:textSize="16dp" />
 
         <soup.neumorphism.NeumorphButton
@@ -58,13 +67,16 @@
             style="@style/Widget.Neumorph.Button"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_below="@id/login"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="100dp"
             android:background="@color/budgy_def"
             android:backgroundTintMode="add"
             android:text="Sign Up"
             android:textColor="@color/white"
             android:textSize="16dp"
             app:neumorph_backgroundColor="@color/budgy_def" />
-    </LinearLayout>
+
+
+
 </RelativeLayout>
