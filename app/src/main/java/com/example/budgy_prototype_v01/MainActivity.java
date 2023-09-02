@@ -36,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 }, null, Shader.TileMode.CLAMP);
         textView.getPaint().setShader(textShader);
 
-
-
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

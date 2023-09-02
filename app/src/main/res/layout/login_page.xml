@@ -41,20 +41,10 @@
             android:textColor="@color/text_color"
             android:textSize="20sp" />
 
-        <soup.neumorphism.NeumorphButton
-            android:id="@+id/login"
-            style="@style/Widget.Neumorph.Button"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#E2EBF5"
-            android:text="Log In"
-            android:textColor="@color/budgy_def"
-            android:textSize="16dp" />
+
 
         <soup.neumorphism.NeumorphButton
-            android:id="@+id/signup"
+            android:id="@+id/back"
             style="@style/Widget.Neumorph.Button"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
@@ -62,7 +52,7 @@
             android:layout_marginTop="5dp"
             android:background="@color/budgy_def"
             android:backgroundTintMode="add"
-            android:text="Sign Up"
+            android:text="Back"
             android:textColor="@color/white"
             android:textSize="16dp"
             app:neumorph_backgroundColor="@color/budgy_def" />
