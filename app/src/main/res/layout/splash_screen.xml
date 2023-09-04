@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bg_element"
+            android:layout_width="match_parent"
+            android:layout_height="485dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/background_element"
+            android:transitionName="background_element"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/budgy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="265dp"
+        android:elegantTextHeight="false"
+        android:shadowColor="#000"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="5"
+        android:text="Budgy"
+        android:textAlignment="center"
+        android:textColor="@color/budgy_def"
+        android:textSize="96sp"
+        android:textStyle="bold"
+        android:transitionName="logo_text"/>
+
+    <TextView
+        android:id="@+id/subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/budgy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Your Budgeting Companion"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:transitionName="sub_head"/>
+
+</RelativeLayout>

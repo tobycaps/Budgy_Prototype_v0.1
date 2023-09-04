@@ -17,7 +17,7 @@
             android:layout_height="485dp"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="0dp"
-            android:src="@drawable/element_background" />
+            android:src="@drawable/background_element" />
     </RelativeLayout>
 
         <TextView
