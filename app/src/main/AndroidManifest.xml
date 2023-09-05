@@ -19,7 +19,15 @@
         <meta-data
             android:name="android.app.lib_name"
             android:value="" />
-    </activity>
+        </activity>
+        <activity
+            android:name=".RegisterPage"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".SplashScreen"
             android:theme="@style/Theme.Material3.Light.NoActionBar"

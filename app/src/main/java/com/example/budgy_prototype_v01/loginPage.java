@@ -8,6 +8,7 @@ import android.graphics.LinearGradient;
 import android.graphics.Shader;
 import android.os.Bundle;
 import android.text.TextPaint;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -33,5 +34,14 @@ public class loginPage extends AppCompatActivity {
                         Color.parseColor("#4E5265")
                 }, null, Shader.TileMode.CLAMP);
         textView.getPaint().setShader(textShader);
+
+
+        Button register = (Button) findViewById(R.id.signup);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(loginPage.this, RegisterPage.class));
+            }
+        });
     }
 }

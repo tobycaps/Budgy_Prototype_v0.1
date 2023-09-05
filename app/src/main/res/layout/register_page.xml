@@ -1,6 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background_element"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/background_element"
+            android:transitionName="background_element"/>
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="40sp"
+            android:textColor="@color/budgy_def"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/background_element"/>
+        <TextView
+            android:id="@+id/register_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="28sp"
+            android:textColor="@color/budgy_def"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/welcome"/>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_username"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/register_text">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="@color/grey_blue"
+            android:layout_height="match_parent"
+            android:textColorHint="@color/grey_blue"
+            android:padding="14dp"
+            android:inputType="textVisiblePassword"
+            android:paddingEnd="10dp"
+            android:hint="Username"
+            android:autofillHints=""
+            android:background="@null"/>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_email"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/layout_username">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:textColor="@color/grey_blue"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/grey_blue"
+                android:padding="14dp"
+                android:inputType="textEmailAddress"
+                android:paddingEnd="10dp"
+                android:hint="Email"
+                android:autofillHints=""
+                android:background="@null"/>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/layout_pass"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/layout_email">
+
+            <EditText
+                android:padding="14dp"
+                android:paddingEnd="10dp"
+                android:layout_width="match_parent"
+                android:id="@+id/password"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/grey_blue"
+                android:autofillHints=""
+                android:textColorHint="@color/grey_blue"
+                tools:ignore="RtlSymmetry"
+                android:background="@null"/>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/signup"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_pass"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="100dp"
+            android:backgroundTint="#E2EBF5"
+            android:text="Create Account"
+            android:textColor="@color/budgy_def"
+            app:neumorph_backgroundColor="@color/background"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/separator"
+            android:text="- - - - - - - - - - - - - - - - - or - - - - - - - - - - - - - - - - -"
+            android:layout_below="@id/signup"
+            android:textSize="16dp"
+            android:textColor="@color/grey_blue"
+            android:gravity="center" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/login"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/have_acc"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="100dp"
+            android:background="@color/budgy_def"
+            android:backgroundTintMode="add"
+            android:text="Log in"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:neumorph_backgroundColor="@color/budgy_def" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/have_acc"
+            android:text="already have an account?"
+            android:layout_below="@id/separator"
+            android:textColor="@color/grey_blue"
+            android:gravity="center"
+            android:textStyle="italic"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+
+            <TextView
+                android:id="@+id/budgy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:elegantTextHeight="false"
+                android:shadowColor="#000"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="5"
+                android:text="Budgy"
+                android:textAlignment="center"
+                android:textColor="@color/budgy_def"
+                android:textSize="96sp"
+                android:textStyle="bold"
+                android:transitionName="logo_text" />
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/budgy"
+                android:layout_centerHorizontal="true"
+                android:text="Your Budgeting Companion"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                android:transitionName="sub_head"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
